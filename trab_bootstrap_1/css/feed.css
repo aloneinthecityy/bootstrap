@@ -1,0 +1,13 @@
+#navbar {
+    display: flex;
+    align-items: center !important;
+    align-content: center !important;
+    height: 70px;
+  }
+  #titulo{
+    font-size:26px;
+}  
+
+#bgfeed{
+  background-color: rgb(252, 252, 252);
+}

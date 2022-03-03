@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initialscale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body class="img-fluid" style="background-image: url('https://cdn.wallpapersafari.com/28/45/17NJxc.jpg');"> 
+
+      <nav class="navbar navbar-light bg-light" id="navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link text-dark"  href="./inicio.html" id="titulo">Arthemis</a>
+            </li>
+          </ul>
+          </nav>
+  
+      <div class="container">
+          <div class="row">
+            <div class="col-2 text-center">                             
+              <!---->
+            </div>
+            <div class="col-8 text-center p-5" id="caixa-formulario">
+              
+              <br></br>                        
+              <div class="alert alert-secondary" role="alert">
+                Faça seu login :)
+              </div>
+
+
+
+              <!--formulário-->                           
+              <form class="row g-3" id="formulario" action="feed.php" method="POST">
+                <div class="form-group col-md-6">
+                  <label for="nome" class="form-label">username:</label>
+                  <input class="form-control" type="text" name="nome" id="nome" placeholder="seu username">
+                </div>
+                <div class="form-group col-md-6 text-center">
+                  <label for="senha" class="form-label">senha:</label>
+                  <input class="form-control" type="password" name="senha" id="senha" placeholder="insira sua senha">
+                </div>
+                <div class="form-group text-center col-md-12">
+                  <button type="submit" class="btn btn-primary" onclick="validacao()">logar</button>
+                </div>
+                <div class="alert alert-danger d-none">
+                  informe o campo <span id="erro"></span>!
+                </div>
+              </form>
+              <!--fim do formulário-->
+              
+   
+                <a>ainda não tem cadastro?</a>
+                <a href="cadastro.html">cadastre-se aqui!</a>
+
+              
+              </div>
+            </div>
+            <div class="col-2 text-center">
+             <!---->
+            </div>
+          </div>
+        </div>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+      crossorigin="anonymous"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/formulario.js"></script>
+      </body>
+</html>
